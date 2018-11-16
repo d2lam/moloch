@@ -11,6 +11,10 @@ shared:
         MOLOCH_COPY_BRANCH: "origin/master"
         MOLOCH_FILE_NAME: "master"
 
+    annotations:
+        beta.screwdriver.cd/cpu: HIGH
+        beta.screwdriver.cd/ram: HIGH
+
 jobs:
     centos-6:
         requires: [~pr, ~commit]
